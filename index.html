@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recursos Programación II</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+</head>
+<body class="container py-4">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand typing-title" href="#">📘 BASE DE DATOS........</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#intro">.</a></li>
+          <li class="nav-item"><a class="nav-link" href="#conversion">.</a></li>
+          <li class="nav-item"><a class="nav-link" href="#poo">.</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">.</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br><br><br>
+  <h1 class="text-center mb-5">Recursos de Clase – BASE DE DATOS</h1>
+
+<!-- Sección Base de Datos dividida en tarjetas -->
+<h2 class="section-title attention-glow" onclick="toggleSection('intro-bd')">
+  💾 Introducción a Bases de Datos <span class="fs-6 d-block mt-1">(¡Hacé clic para ver el contenido!)</span>
+</h2>
+
+<div id="intro-bd" class="row collapse-section mb-5">
+  <!-- Teoría -->
+  <div class="col-md-4 d-flex" style="--delay: 0.2s;">
+    <div class="p-4 card-custom w-100">
+      <h5 class="mb-3">📘 Teoría</h5>
+      <ul class="list-unstyled">
+        <li>📌 <a href="https://docs.google.com/document/d/1VpcEh1EohFWfmZzwozHxphdri80a1KxA/edit?usp=sharing" target="_blank">Tema 1: ¿Qué es una Base de Datos?</a></li>
+        <li>📌 <a href="https://docs.google.com/document/d/1C1v1o8nv6cVYD1ZZUSkG2jdaNqn1X8np/edit?usp=sharing" target="_blank">Tema 2: ¿Qué es una Tabla?</a></li>
+        <li>📌 <a href="https://docs.google.com/document/d/1vIbJiF7ZCS9iFUpsYr_vveMrnVmJhECm/edit?usp=sharing" target="_blank">Tema 3: Tipos de BD</a></li>
+        <li>📌 <a href="https://docs.google.com/document/d/16BhY_6fYuxYL9qtTlq9ixtHdxAOD1HUo/edit?usp=sharing" target="_blank">Tema 4: Modelo Relacional</a></li>
+        <li>📌 <a href="https://docs.google.com/document/d/1PFLiKqHmLCkUSj9Ixnpfy3XOhGIHruX_/edit?usp=sharing" target="_blank">Tema 5: MER</a></li>
+        <li>📌 <a href="https://docs.google.com/document/d/1el-J6VEEeqjCBtGlIjElIoeG3BPMOz3u/edit?usp=sharing" target="_blank">Tema 6: Cardinalidad</a></li>
+
+      </ul>
+    </div>
+  </div>
+
+  <!-- Tareas -->
+  <div class="col-md-4 d-flex" style="--delay: 0.5s;">
+    <div class="p-4 card-custom w-100">
+      <h5 class="mb-3">✍️ Tareas</h5>
+      <ul class="list-unstyled">
+        <li>✍️ <a href="https://docs.google.com/document/d/1tN8ZQxsHe9ux7OvA85c3MtwvT0mjhFwo/edit?usp=sharing" target="_blank">Tema 6.1: Tarea MER</a></li>
+        <li>📌 <a href="https://docs.google.com/document/d/1BfuI71YSI4KsK7esgVX8o09_7f8Sw92B/edit?usp=sharing" target="_blank">Tema 7: Tipos de Datos + Tarea</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Carpeta Draw.io -->
+  <div class="col-md-4 d-flex" style="--delay: 0.8s;">
+    <div class="p-4 card-custom w-100">
+      <h5 class="mb-3">🧩 Diagramación</h5>
+      <ul class="list-unstyled">
+        <li>📝 <a href="https://app.diagrams.net/" target="_blank">Abrir Draw.io (app.diagrams.net)</a></li>
+        <li>📁 <a href="https://drive.google.com/drive/folders/1fFYNswJkk5s6qWndWz45wjPSbbth9TjL?usp=sharing" target="_blank">Carpeta para subir los archivos</a></li>
+      </ul>
+      <p class="mt-2"><small>💡 Usá esta herramienta para crear tus modelos entidad-relación (MER)</small></p>
+    </div>
+  </div>
+</div>
+
+<!-- Sección exclusiva para Introducción a SQL -->
+<h2 class="section-title attention-glow" onclick="toggleSection('intro-sql')">
+  🧠 Introducción a SQL <span class="fs-6 d-block mt-1">(¡Hacé clic para ver el contenido!)</span>
+</h2>
+
+<div id="intro-sql" class="row collapse-section mb-5">
+  <!-- Teoría SQL -->
+  <div class="col-md-4 d-flex" style="--delay: 0.2s;">
+    <div class="p-4 card-custom w-100">
+      <h5 class="mb-3">📘 Teoría SQL</h5>
+      <ul class="list-unstyled">
+        <li>📘 <a href="https://docs.google.com/document/d/1mBSZtjhQeNmyLQR6XXtuUPmHGXC1TXkUNX5GdE0OVvA/edit?usp=sharing" target="_blank">¿SQL? Crear bases, tablas y schemas</a></li>
+      </ul>
+      <p class="mt-2"><small>📌 Contenido paso a paso para practicar en SQL Server con ejemplos guiados.</small></p>
+    </div>
+  </div>
+
+  <!-- Tareas SQL -->
+  <div class="col-md-4 d-flex" style="--delay: 0.4s;">
+    <div class="p-4 card-custom w-100">
+      <h5 class="mb-3">✍️ Ejercicios</h5>
+      <ul class="list-unstyled">
+        <li>📌 <a href="https://docs.google.com/document/d/1YxWnF6s38qssi1nGgmkGtKXpbZ4qNnXbilrTBGfNeqk/edit?usp=sharing" target="_blank">Tarea:21/04 ->  uso de schemas y relaciones</a></li>
+      </ul>
+      <p class="mt-2"><small>🧠 Practicá creando tu base, tablas y relaciones reales entre datos.</small></p>
+    </div>
+  </div>
+
+
+</div>
+
+
+  <!-- Módulo FAQ -->
+  <h2 class="section-title attention-glow" onclick="toggleSection('faq')">❓ Preguntas Frecuentes</h2>
+  <div id="faq" class="row collapse-section mb-5">
+    <div class="col-12"style="--delay: 0.1s;">
+      <div class="p-3 card-custom w-100">
+        <h5 class="mb-3">💬 Dudas comunes</h5>
+        <ul class="list-unstyled">
+          <li><strong>¿Cómo ejecuto los programas?</strong><br>Usá NetBeans y presioná <code>Shift + F6</code>.</li>
+          <li><strong>Error "main class not found"</strong><br>Verificá el método <code>public static void main</code>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer class="mt-5 text-center">
+    <p class="console-effect"></p>
+    <p class="footer-update">
+      🛠️ Última actualización: <strong>abril 2025</strong><br>
+      <span class="footer-punchline">📄 Código validado. Chistes malos del profe también incluidos.
+
+      </span>
+    </p>
+    
+    <!-- Huevo de pascua -->
+    <button id="easterBtn" class="easter-btn">🐣</button>
+    <p id="easterMessage" class="easter-message d-none"></p>  </footer>
+  <script src="consola-footer.js"></script>
+  <script src="easteregg.js"></script>
+
+
+
+  
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.classList.toggle('show');
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>
